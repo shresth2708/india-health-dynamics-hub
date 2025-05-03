@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart, Line } from "recharts";
@@ -87,7 +86,7 @@ export function SystemAnalysisDashboard() {
                   </li>
                   <li className="flex items-start">
                     <div className="bg-health-coral h-2 w-2 rounded-full mt-2 mr-2"></div>
-                    <span>71% of IT professionals report sedentary behavior >8 hrs/day</span>
+                    <span>71% of IT professionals report sedentary behavior &gt;8 hrs/day</span>
                   </li>
                 </ul>
               </CardContent>
