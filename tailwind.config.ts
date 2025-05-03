@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,24 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Health platform specific colors
+				health: {
+					'teal': '#2A9D8F',
+					'dark-blue': '#264653',
+					'coral': '#E76F51',
+					'orange': '#F4A261',
+					'yellow': '#E9C46A',
+					'light': '#F7F9F9',
+					'medium': '#E0E5E5',
+					'dark': '#333333'
+				},
+				// For causal loop diagram
+				cld: {
+					'reinforcing': '#2A9D8F',
+					'balancing': '#E76F51',
+					'variable': '#264653',
+					'selected': '#E9C46A'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +103,20 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				display: ['Montserrat', 'sans-serif']
 			}
 		}
 	},
